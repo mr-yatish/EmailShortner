@@ -48,7 +48,6 @@ function EmailChunk({ setShowEmailChunk }) {
         try {
             await navigator.clipboard.writeText(emails.join(', '));
             handleRemoveChunk(index)
-            alert('Emails copied to clipboard!');
         } catch (err) {
             alert('Failed to copy emails.');
         }
